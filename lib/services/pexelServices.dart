@@ -2,8 +2,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class PexelsService {
-  static const String _baseUrl = '';
-  static const String _apiKey = '<API_KEY>';
+  static const String _baseUrl = 'https://api.unsplash.com/photos';
+  static const String _apiKey = 'cU_tciD7JnRM3sOk165nk85rigyWE0VCiarJLCqphIc';
 
   Future<List<dynamic>> fetchPhotos(int page, int perPage) async {
     final response = await http.get(
