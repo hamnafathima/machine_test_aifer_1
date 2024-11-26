@@ -14,7 +14,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   void initState() {
     super.initState();
-    // Fetch photos as soon as the screen loads
+   
     Provider.of<PhotoProvider>(context, listen: false).fetchPhotos();
   }
 
